@@ -95,7 +95,8 @@ void loop() {
     client.print("On");
     //time call
     timeClient.update();
-  client.println(" \n");
+  
+  client.println("<br><br>");
   client.println(daysOfTheWeek[timeClient.getDay()]);
   client.print(", ");
   client.print(timeClient.getHours());
@@ -108,8 +109,11 @@ void loop() {
     client.print("Off");
     //time call
     timeClient.update();
-
+  
+  client.println("<br><br>");
+  client.println("<a>");
   client.print(daysOfTheWeek[timeClient.getDay()]);
+  client.println("</a>");
   client.print(", ");
   client.print(timeClient.getHours());
   client.print(":");
